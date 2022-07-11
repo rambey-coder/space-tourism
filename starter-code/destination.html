@@ -6,13 +6,60 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
 
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="destination-style.css">
   
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body>
 
-  00 Home
+  <header>
+    <div class="head-nav">
+      <div class="logo">
+        <img src="./assets/favicon-32x32.png" alt="">
+      </div>
+      <div class="list-container">
+        <hr>
+        <div class="lists">
+          <a href="index.html" class="link">
+            <span>00</span>
+            Home</a>
+          <a href="destination.html" class="link active">
+            <span>01</span>
+            Destination</a>
+          <a href="#" class="link">
+            <span>02</span>
+            Crew</a>
+          <a href="#" class="link">
+            <span>03</span>
+            Technology</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="main-section">
+      <div class="main-1">
+        <p>
+          <span>01</span>
+          Pick your destination
+        </p>
+        <img src="./assets/destination/image-moon.webp" alt="">
+      </div>
+      <div class="main-2">
+        <div class="tab-container">
+          <button class="toggle">MOON</button>
+          <button class="toggle">MARS</button>
+          <button class="toggle">EUROPA</button>
+          <button class="toggle">TITAN</button>
+        </div>
+
+        <div class="tab-content"></div>
+      </div>
+    </div>
+  </section>
+  <!-- 00 Home
   01 Destination
   02 Crew
   03 Technology
@@ -34,6 +81,8 @@
   225 mil. km
 
   Est. travel time
-  9 months
+  9 months -->
+
+  <script src="app.js"></script>
 </body>
 </html>
