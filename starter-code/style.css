@@ -69,3 +69,13 @@ body {
 .lists > a > span {
     font-weight: 400;
 }
+
+.hero-section {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 67vh;
+} 
+
