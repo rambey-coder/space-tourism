@@ -76,6 +76,60 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 67vh;
+    height: 70vh;
 } 
 
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-1 {
+    width: 50%;
+}
+
+.hero-1 > p:nth-child(1) {
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.hero-1 > h1 {
+    color: #fff;
+    font-family: 'Cormorant SC', serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 90px;
+    margin-bottom: 2rem;
+}
+
+.hero-1 > p:nth-child(3) {
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 14px;
+    width: 65%;
+    line-height: 2;
+}
+
+.hero-2 {
+    width: 40%;
+}
+
+.exp {
+    background: #fff;
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cormorant SC', serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 30px;
+    margin: auto;
+}
