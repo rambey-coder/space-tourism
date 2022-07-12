@@ -11,5 +11,10 @@
 body {
     background: url(./assets/destination/background-destination-desktop.jpg);
     font-family: 'Oswald', sans-serif;
+    background-repeat: no-repeat;
     /* font-family: 'Cormorant SC', serif; */
+}
+
+.main-section {
+    display: flex;
 }
