@@ -18,18 +18,15 @@ const imgContainer = document.querySelector('.main-1')
 function getData() {
     fetch('./data.json')
         .then(res => res.json())
-        // .then(data => console.log(data.destinations[0]))
         .then(data => {
             data.destinations
             let output;
-            let outputImg;
-            setValue(data, output, outputImg)
+            setValue(data, output)
         })
 }
-const setValue = (value, output, outputImg) => {
-    // console.log(value.destinations[0]);
+const setValue = (value, output) => {
     const val = value.destinations[0];
-    output += ` 
+    tabContent.innerHTML += ` 
     <h1>${val.name}</h1>
     <p>${val.description}</p>
     <hr>
@@ -39,16 +36,14 @@ const setValue = (value, output, outputImg) => {
             <h2>${val.distance}</h2>
         </div>
         <div class='dis-2'>
-        <P>AVG. DISTANCE</P>
-        <h2>${val.travel}</h2>
+            <P>AVG. DISTANCE</P>
+            <h2>${val.travel}</h2>
         </div>
     </div>
 `
 
-const img = document.createElement('img')
-img.src = val.images.png;
-imgContainer.appendChild(img)
-
-tabContent.innerHTML = output;
+    const img = document.createElement('img')
+    img.src = val.images.png;
+    imgContainer.appendChild(img)
 }
 getData()
