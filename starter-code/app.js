@@ -20,10 +20,12 @@ function getData() {
         .then(res => res.json())
         .then(data => {
             data.destinations
-            let output;
-            setValue(data, output)
+            setValue(data)
         })
 }
+
+getData()
+
 const setValue = (value, output) => {
     const val = value.destinations[0];
     tabContent.innerHTML += ` 
@@ -46,4 +48,3 @@ const setValue = (value, output) => {
     img.src = val.images.png;
     imgContainer.appendChild(img)
 }
-getData()
