@@ -21,7 +21,6 @@ function getData() {
     fetch('./data.json')
         .then(res => res.json())
         .then(data => {
-            data.destinations
             setMoon(data)
             setMars(data)
             setEuropa(data)
