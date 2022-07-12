@@ -42,6 +42,11 @@ body {
 
 body > section > div > div.main-1 > img {
     width: 100%;
+    display: none;
+}
+
+body > section > div > div.main-1 > img.active {
+    display: block;
 }
 
 .tab-container {
@@ -114,9 +119,9 @@ body > section > div > div.main-1 > img {
     margin-top: 15px;
 }
 
-/* .tab {
+.tab {
     display: none;
-} */
+}
 
 .tab.active {
     display: block;
