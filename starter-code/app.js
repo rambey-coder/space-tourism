@@ -39,7 +39,7 @@ const setMoon = (value, output) => {
             <h2>${val.distance}</h2>
         </div>
         <div class='dis-2'>
-            <P>AVG. DISTANCE</P>
+            <P>EST. TRAVEL TIME</P>
             <h2>${val.travel}</h2>
         </div>
     </div>

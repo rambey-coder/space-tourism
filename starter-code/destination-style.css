@@ -48,6 +48,7 @@ body > section > div > div.main-1 > img {
     display: flex;
     align-items: center;
     gap: 1rem;
+    margin-bottom: 2rem;
 }
 
 .toggle {
@@ -63,8 +64,54 @@ body > section > div > div.main-1 > img {
     letter-spacing: 1.5px;
 }
 
+.toggle.active {
+    border-bottom: 3px solid #fff;
+}
+
 .main-2 {
     width: 50%;
+}
+
+.tab > h1 {
+    font-family: 'Cormorant SC', serif;
+    color: #fff;
+    font-size: 70px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.tab >  p {
+    color: #fff;
+    font-weight: 200;
+    line-height: 2;
+    letter-spacing: 1.3px;
+    margin-bottom: 3rem;
+}
+
+.tab > hr {
+    opacity: .3;
+}
+
+.distance {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+}
+
+.dis-1 > p, .dis-2 > p {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1.3px;
+}
+
+.dis-1 > h2, .dis-2 > h2 {
+    font-family: 'Cormorant SC', serif;
+    color: #fff;
+    font-weight: 300;
+    margin-top: 15px;
 }
 
 /* .tab {
