@@ -12,9 +12,10 @@ navLink.forEach((nav, i) => {
 
 
 const tabBtn = document.querySelectorAll('.toggle')
+const content = document.querySelectorAll('.tab') 
 const tabContent = document.querySelector('.tab')
 const imgContainer = document.querySelector('.main-1')
-const tabContainer = document.querySelector('.main-section')
+const tabContainer = document.querySelector('.tab-content')
 
 function getData() {
     fetch('./data.json')
@@ -23,6 +24,8 @@ function getData() {
             data.destinations
             setMoon(data)
             setMars(data)
+            setEuropa(data)
+            setTitan(data)
         })
 }
 
@@ -79,3 +82,79 @@ const setMars = (value) => {
     imgContainer.appendChild(img)
 
 }
+
+const setEuropa = (value) => {
+    const container = document.createElement('div')
+    container.classList.add('tab')
+    const val = value.destinations[2]
+    container.innerHTML += `
+    <h1>${val.name}</h1>
+    <p>${val.description}</p>
+    <hr>
+    <div class='distance'>
+        <div class='dis-1'>
+            <P>AVG. DISTANCE</P>
+            <h2>${val.distance}</h2>
+        </div>
+        <div class='dis-2'>
+            <P>AVG. DISTANCE</P>
+            <h2>${val.travel}</h2>
+        </div>
+    </div>
+    `
+    tabContainer.appendChild(container)
+
+    const img = document.createElement('img')
+    img.src = val.images.png;
+    imgContainer.appendChild(img)
+
+}
+
+const setTitan = (value) => {
+    const container = document.createElement('div')
+    container.classList.add('tab')
+    const val = value.destinations[3]
+    container.innerHTML += `
+    <h1>${val.name}</h1>
+    <p>${val.description}</p>
+    <hr>
+    <div class='distance'>
+        <div class='dis-1'>
+            <P>AVG. DISTANCE</P>
+            <h2>${val.distance}</h2>
+        </div>
+        <div class='dis-2'>
+            <P>AVG. DISTANCE</P>
+            <h2>${val.travel}</h2>
+        </div>
+    </div>
+    `
+    tabContainer.appendChild(container)
+
+    const img = document.createElement('img')
+    img.src = val.images.png;
+    imgContainer.appendChild(img)
+
+}
+
+tabBtn.forEach((btn, i) => {
+    btn.addEventListener('click', () => {
+        tabBtn.forEach(btn => {
+            btn.classList.remove('active')
+        })
+
+        
+        for (let index = 0; index < content.length; index++) {
+            const element = content[index];
+            element.classList.remove('active')
+        }
+
+        tabBtn[i].classList.add('active')
+        content[i].classList.add('active')
+    })
+})
+console.log(content); 
+console.log(tabBtn);
+
+
+
