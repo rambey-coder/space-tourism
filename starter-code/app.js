@@ -27,7 +27,7 @@ getData()
 
 const setData = (data) => {
     let value = data.destinations;
-    
+
     value.forEach((val, i) => {
         tabContainer.innerHTML += ` 
     <div class='tab'>
@@ -47,17 +47,13 @@ const setData = (data) => {
     </div>
 `
 
-imgContainer.innerHTML += ` 
+        imgContainer.innerHTML += ` 
         <img src=${val.images.png} class='space-img'/> 
 `
-        // const img = document.createElement('img')
-        // // img.classList.add('active')
-        // img.src = val.images.png;
-        // imgContainer.appendChild(img)
     })
-    
-const img = document.querySelectorAll('.space-img')
-const content = document.querySelectorAll('.tab')
+
+    const img = document.querySelectorAll('.space-img')
+    const content = document.querySelectorAll('.tab')
     content[0].classList.add('active')
     img[0].classList.add('active')
     toggle(content, img)
@@ -77,28 +73,11 @@ const toggle = (content, img) => {
             content.forEach(cont => {
                 cont.classList.remove('active')
             })
-    
+
             tabBtn[i].classList.add('active')
             img[i].classList.add('active')
             content[i].classList.add('active')
         })
     })
-    
+
 }
-
-
-
-
-/* CREW */
-// const engineer = (crew) => {
-//     console.log(crew);
-// }
-// const commander = (crew) => {
-//     console.log(crew);
-// }
-// const specialist = (crew) => {
-//     console.log(crew);
-// }
-// const pilot = (crew) => {
-//     console.log(crew);
-// }
