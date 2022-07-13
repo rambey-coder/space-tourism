@@ -46,24 +46,32 @@ const setData = (data) => {
     </div>
     </div>
 `
-        const img = document.createElement('img')
-        // img.classList.add('active')
-        img.src = val.images.png;
-        imgContainer.appendChild(img)
 
-        // console.log(i);
+imgContainer.innerHTML += ` 
+        <img src=${val.images.png} class='space-img'/> 
+`
+        // const img = document.createElement('img')
+        // // img.classList.add('active')
+        // img.src = val.images.png;
+        // imgContainer.appendChild(img)
     })
     
-    const content = document.querySelectorAll('.tab')
+const img = document.querySelectorAll('.space-img')
+const content = document.querySelectorAll('.tab')
     content[0].classList.add('active')
-    toggle(content)
+    img[0].classList.add('active')
+    toggle(content, img)
 }
 
-const toggle = (content) => {
+const toggle = (content, img) => {
     tabBtn.forEach((btn, i) => {
         btn.addEventListener('click', () => {
             tabBtn.forEach((btn) => {
                 btn.classList.remove('active')
+            })
+
+            img.forEach(img => {
+                img.classList.remove('active')
             })
 
             content.forEach(cont => {
@@ -71,6 +79,7 @@ const toggle = (content) => {
             })
     
             tabBtn[i].classList.add('active')
+            img[i].classList.add('active')
             content[i].classList.add('active')
         })
     })
