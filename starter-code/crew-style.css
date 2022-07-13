@@ -16,7 +16,11 @@ body {
 }
 
 .crew-container {
-    width: 80%;margin: auto;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .crew-info {
@@ -36,6 +40,14 @@ body {
     margin-bottom: 4rem;
 }
 
+.info {
+    display: none;
+}
+
+.info.active {
+    display: block;
+}
+
 .crew-btn {
     display: flex;
     align-items: center;
@@ -48,4 +60,17 @@ body {
     height: 10px;
     border-radius: 50px;
     cursor: pointer;
+}
+
+.crew-toggle.active {
+    background: #fff;
+}
+
+.bio-img {
+    width: 100%;
+    display: none;
+}
+
+.bio-img.active {
+    display: block;
 }
