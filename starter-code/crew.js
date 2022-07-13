@@ -19,7 +19,7 @@ const setData = (data) => {
     tabContainer.innerHTML += `
     <div class='info'> 
         <h3>${val.role}</h3>
-        <p>${val.name}</p>
+        <h1>${val.name}</h1>
         <p>${val.bio}</p>
     </div>
 `

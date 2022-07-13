@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400&display=swap');
 
 * {
     padding: 0;
@@ -12,7 +12,7 @@
 body {
     background: url(./assets/destination/background-destination-desktop.jpg);
     background-repeat: no-repeat;
-    /* font-family: 'Cormorant SC', serif; */
+    /* font-family: 'Cormorant Unicase', serif; */
 }
 
 .main-section {
@@ -78,7 +78,7 @@ body > section > div > div.main-1 > img.active {
 }
 
 .tab > h1 {
-    font-family: 'Cormorant SC', serif;
+    font-family: 'Cormorant Unicase', serif;
     color: #fff;
     font-size: 70px;
     font-weight: 400;
@@ -113,7 +113,7 @@ body > section > div > div.main-1 > img.active {
 }
 
 .dis-1 > h2, .dis-2 > h2 {
-    font-family: 'Cormorant SC', serif;
+    font-family: 'Cormorant Unicase', serif;     
     color: #fff;
     font-weight: 300;
     margin-top: 15px;
