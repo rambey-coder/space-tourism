@@ -46,15 +46,21 @@ article > p {
     background: transparent;
     border: 1px solid #fff;
     border-radius: 50px;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+.btn.active {
+    background: #fff;
+    color: #000;
 }
 
 .btn > p {
     display: inline-block;
     font-size: 20px;
-    color: #fff;
     text-align: center;
     font-weight: 400;
     font-family: 'Cormorant Unicase', serif;
