@@ -49,7 +49,7 @@ body {
     width: 70%;
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     gap: 4rem;
     padding: 0 100px 0 80px;
 }
@@ -136,4 +136,22 @@ body {
     font-weight: 400;
     font-size: 30px;
     margin: auto;
+}
+
+@media screen and (max-width: 1045px) {
+    .head-nav {
+        gap: 5rem;
+    }
+    .list-container > hr {
+        display: none;
+    }
+
+    .list-container {
+        width: 100%;
+    }
+
+    .lists {
+        width: 100%;
+        gap: 0;
+    }
 }
