@@ -27,7 +27,7 @@ section {
 }
 
 .crew-info {
-    width: 50%;
+    width: 55%;
 }
 
 section > p > span {
@@ -107,9 +107,17 @@ section > p {
 }
 
 .crew-profile {
-    width: 50%;
+    width: 45%;
 }
 
-.crew-info {
-    width: 40%;
+.crew-profile > img:nth-child(4) {
+    width: 92%;
+}
+
+.crew-profile > img:nth-child(3) {
+    width: 82%;
+}
+
+.crew-profile > img:nth-child(2) {
+    width: 65%;
 }
