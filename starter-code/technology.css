@@ -65,3 +65,19 @@ article > p {
     font-weight: 400;
     font-family: 'Cormorant Unicase', serif;
 }
+
+.details {
+    display: none;
+}
+
+.details.active {
+    display: block;
+}
+
+.tech-img {
+    display: none;
+}
+
+.tech-img.active {
+    display: block;
+}
