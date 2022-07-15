@@ -155,7 +155,7 @@ article > p {
         background-repeat: no-repeat;
         background-size: cover;
     }
-    
+
     .details > p:nth-child(2) {
         font-size: 30px;
     }
@@ -168,5 +168,31 @@ article > p {
 @media screen and (max-width: 638px) {
     .art-1, .art-2 {
         width: 80%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        background: url(./assets/technology/background-technology-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .art-1 {
+        flex-direction: column;
+    }
+
+    .art-1, .art-2 {
+        width: 90%;
+    }
+
+    .tech-btn {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .tech-img {
+        height: 10rem;
     }
 }
