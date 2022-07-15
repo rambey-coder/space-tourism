@@ -11,6 +11,7 @@
 body {
     background: url(./assets/crew/background-crew-desktop.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     /* font-family: 'Bellefair', serif; */
 }
 
@@ -70,10 +71,10 @@ section > p {
 
 .info > p {
     color: #fff;
-    font-weight: 200;
+    font-weight: 300;
     width: 80%;
     font-size: 15px;
-    letter-spacing: 1.2px;
+    /* letter-spacing: 1.2px; */
     line-height: 1.8;
 }
 
@@ -81,7 +82,7 @@ section > p {
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
 
 .crew-toggle {
@@ -119,4 +120,69 @@ section > p {
 
 .crew-profile > img:nth-child(2) {
     width: 65%;
+}
+
+@media screen and (max-width: 961px) {
+    .bio-img, .crew-profile > img:nth-child(2) {
+        width: 80%;
+    }
+
+    .crew-profile > img:nth-child(3), .crew-profile > img:nth-child(4) {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 849px) {
+    body {
+        background: url(./assets/crew/background-crew-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .crew-container {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .crew-btn {
+        justify-content: center;
+    }
+
+    .info {
+        text-align: center;
+    }
+
+    .crew-info, .crew-profile {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .crew-info, .crew-profile {
+        width: 90%;
+    }
+
+    .info > p {
+        width: 100%;
+    }
+
+    .info > h1 {
+        font-size: 27px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        background: url(./assets/crew/background-crew-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .info > h3 {
+        font-size: 18px;
+    }
+    
+    .info > h1 {
+        font-size: 20px;
+    }
 }
