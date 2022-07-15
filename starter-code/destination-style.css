@@ -11,6 +11,7 @@
 body {
     background: url(./assets/destination/background-destination-desktop.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     /* font-family: 'Bellefair', serif; */
 }
 
@@ -128,4 +129,20 @@ body > section > div > div.main-1 > img.active {
 
 .tab.active {
     display: block;
+}
+
+@media screen and (max-width: 870px) {
+    .main-section {
+        flex-direction: column-reverse;
+        gap: 4rem;
+    }
+
+    .gen-sec > p {
+        text-align: center;
+    }
+
+    .main-1, .main-2 {
+        width: 70%;
+        margin: auto;
+    }
 }
