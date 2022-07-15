@@ -24,9 +24,9 @@ body {
     padding: 25px 0;
 }
 
-/* .logo {
-    width: 10%;
-} */
+.logo > img {
+    width: 35px;
+}
 
 .icon {
     display: none;
@@ -181,8 +181,8 @@ body {
         gap: 4rem;
     }
 
-    .hero-1 {
-        width: 90%;
+    .hero-1, .hero-2 {
+        width: 95%;
         text-align: center;
     }
 
@@ -195,6 +195,7 @@ body {
     .head-nav {
         position: relative;
         margin: auto;
+        width: 90%;
     }
 
     .lists {
@@ -206,11 +207,11 @@ body {
         height: 100vh;
         background: #141c2bcc;
         width: 100%;
-        opacity: 0;
+        display: none;
     }
 
     .lists.active {
-        opacity: 1;
+        display: flex;
     }
 
     .lists > a.active {
@@ -233,5 +234,11 @@ body {
     .icon > i {
         color: #fff;
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .hero-1 > h1 {
+        font-size: 6em;
     }
 }
