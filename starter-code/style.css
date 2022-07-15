@@ -28,6 +28,11 @@ body {
     width: 10%;
 } */
 
+.icon {
+    display: none;
+    width: 10%;
+}
+
 .list-container {
     width: 95%;
     display: flex;
@@ -80,7 +85,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 70vh;
+    height: 80vh;
 } 
 
 .hero-content {
@@ -153,5 +158,35 @@ body {
     .lists {
         width: 100%;
         gap: 0;
+    }
+}
+
+@media screen and (max-width: 757px) {
+    body {
+        background: url(./assets/home/background-home-tablet.jpg);
+    }
+
+    .lists {
+        width: 90%;
+        margin: 0 0 0 auto;
+        padding: 0 20px;
+    }
+
+    .hero-section {
+        height: auto;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .hero-1 {
+        width: 90%;
+        text-align: center;
+    }
+
+    .hero-1 > p {
+        margin: auto;
     }
 }
