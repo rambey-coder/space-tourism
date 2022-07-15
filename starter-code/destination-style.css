@@ -104,9 +104,11 @@ body > section > div > div.main-1 > img.active {
 
 .distance {
     margin-top: 2rem;
+    width: 85%;
     display: flex;
     align-items: center;
-    gap: 8rem;
+    justify-content: space-between;
+    /* gap: 8rem; */
 }
 
 .dis-1 > p, .dis-2 > p {
@@ -132,6 +134,12 @@ body > section > div > div.main-1 > img.active {
 }
 
 @media screen and (max-width: 870px) {
+    body {
+        background: url(./assets/destination/background-destination-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     .main-section {
         flex-direction: column-reverse;
         gap: 4rem;
@@ -144,5 +152,31 @@ body > section > div > div.main-1 > img.active {
     .main-1, .main-2 {
         width: 70%;
         margin: auto;
+    }
+}
+
+@media screen and (max-width: 608px) {
+    
+}
+
+@media screen and (max-width: 456px) {
+    body {
+        background: url(./assets/destination/background-destination-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .main-1, .main-2 {
+        width: 90%;
+    }
+
+    .tab-container {
+        gap: 0;
+    }
+
+    .distance {
+        flex-direction: column;
+        margin: 2rem auto;
+        gap: 3rem;
     }
 }
