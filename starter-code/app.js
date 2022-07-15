@@ -10,4 +10,15 @@ navLink.forEach((nav, i) => {
 
 })
 
+const content = document.querySelector('.lists')
+const menu = document.querySelector('.fa-solid')
 
+menu.addEventListener('click', function() {
+    content.classList.toggle('active')
+
+    if(menu.classList.contains('fa-bars')) {
+        menu.classList.replace('fa-bars', 'fa-times')
+    } else {
+        menu.classList.replace('fa-times', 'fa-bars')
+    }
+})
