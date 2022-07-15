@@ -190,3 +190,48 @@ body {
         margin: auto;
     }
 }
+
+@media screen and (max-width: 615px) {
+    .head-nav {
+        position: relative;
+        margin: auto;
+    }
+
+    .lists {
+        position: absolute;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        transform: translate(0, 60%);
+        height: 100vh;
+        background: #141c2bcc;
+        width: 100%;
+        opacity: 0;
+    }
+
+    .lists.active {
+        opacity: 1;
+    }
+
+    .lists > a.active {
+        border-right: 3px solid #fff;
+        border-bottom: 0;
+    }
+
+    .lists > a {
+        width: 70%;
+        margin: auto;
+        justify-content: center;
+        padding: 15px 10px;
+    }
+
+    .icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .icon > i {
+        color: #fff;
+        font-size: 20px;
+    }
+}
