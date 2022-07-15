@@ -11,6 +11,8 @@
 
 body {
     background: url(./assets/home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Oswald', sans-serif;
     /* font-family: 'Bellefair', serif; */
 }
@@ -164,6 +166,8 @@ body {
 @media screen and (max-width: 757px) {
     body {
         background: url(./assets/home/background-home-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .lists {
@@ -196,6 +200,8 @@ body {
         position: relative;
         margin: auto;
         width: 90%;
+        padding: 0;
+        margin-bottom: 2rem;
     }
 
     .lists {
@@ -238,6 +244,12 @@ body {
 }
 
 @media screen and (max-width: 350px) {
+    body {
+        background: url(./assets/home/background-home-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     .hero-1 > h1 {
         font-size: 6em;
     }
