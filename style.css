@@ -209,7 +209,7 @@ body {
         right: 0;
         flex-direction: column;
         transform: translate(0, 60%);
-        height: 100vh;
+        height: 70vh;
         background: #141c2bcc;
         width: 100%;
         display: none;
