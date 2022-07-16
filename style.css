@@ -164,7 +164,7 @@ body {
 
 @media screen and (max-width: 757px) {
     body {
-        background: url(./assets/home/background-home-tablet.jpg);
+        background: url(/starter-code/assets/home/background-home-tablet.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
