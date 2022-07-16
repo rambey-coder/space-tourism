@@ -244,7 +244,7 @@ body {
 
 @media screen and (max-width: 350px) {
     body {
-        background: url(./assets/home/background-home-mobile.jpg);
+        background: url(/starter-code/assets/home/background-home-mobile.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
